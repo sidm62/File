@@ -25,8 +25,6 @@ public class SearchVisitor implements FileSystemVisitor {
 
     @Override
     public void visit(Directory directory) {
-        for (FileSystemElement child :directory.getChildren()) {
-            child.accept(this);
-        }
+
     }
 }

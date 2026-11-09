@@ -12,7 +12,7 @@ public class Main {
         date.setDay(7);
 
         System.out.println("Current Date: " + date.getDay() + "/" + date.getMonth() + "/" + date.getYear());
-        date.advanceDay(30);
+        date.advanceDay(365);
         System.out.println("Date after advancing 5 days: " + date.getDay() + "/" + date.getMonth() + "/" + date.getYear());
     }
 

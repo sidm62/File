@@ -15,7 +15,7 @@ public class CalendarToNewDateAdapter implements NewDateInterface {
 
     @Override
     public void setMonth(int month) {
-        calendar.set(java.util.Calendar.MONTH, month - 1); // Calendar months are 0-based
+        calendar.set(java.util.Calendar.MONTH, month - 1);
     }
 
     @Override
@@ -30,7 +30,7 @@ public class CalendarToNewDateAdapter implements NewDateInterface {
 
     @Override
     public int getMonth() {
-        return calendar.get(java.util.Calendar.MONTH) + 1; // Calendar months are 0-based
+        return calendar.get(java.util.Calendar.MONTH) + 1;
     }
 
     @Override

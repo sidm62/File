@@ -24,10 +24,10 @@ public class Main {
 
         System.out.println("Total File size: " +  visitor.getTotalSizeMB() +"Mb");
 
-        SearchVisitor pisitor = new SearchVisitor("pdf");
-        run.accept(pisitor);
+        SearchVisitor isitor = new SearchVisitor("pdf");
+        run.accept(isitor);
         System.out.println(".pdf:");
-        for (File f : pisitor.getMatchedFiles()) {
+        for (File f : isitor.getMatchedFiles()) {
             System.out.println("File: "+ f.getName() + " File Size: " + f.getSizeMB() );
         }
     }

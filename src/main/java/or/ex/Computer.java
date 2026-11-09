@@ -39,7 +39,7 @@ public class Computer {
     public String toString() {
         return "Computer{" +
                 "Processor='" + Processor + '\'' +
-                ", ramGB=" + ramGB +
+                ", ramGB='" + ramGB + '\'' +
                 ", HardDrive='" + HardDrive + '\'' +
                 ", GraphicsCard='" + GraphicsCard + '\'' +
                 ", OperatingSystem='" + OperatingSystem + '\'' +

@@ -2,14 +2,17 @@ package or.ex;
 
 public interface ComputerBuild {
     void reset();
-    void buildProcessor(String grade);
-    void buildRam(int gb);
-    void buildHardDrive(String storage);
 
 
-    void buildGraphicsCard(String gbu);
-    void buildOperatingSystem(String os);
-    void addAccessory(String accessory, double price);
+    void buildProcessor();
+
+    void buildRam();
+    void buildHardDrive();
+
+
+    void buildGraphicsCard();
+    void buildOperatingSystem();
+    void addAccessory();
 
     Computer getResult();
 }

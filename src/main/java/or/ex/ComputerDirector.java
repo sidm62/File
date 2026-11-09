@@ -12,28 +12,29 @@ public class ComputerDirector {
 
     public void constructGamingComputer() {
         computerBuilder.reset();
-        computerBuilder.buildProcessor("Intel Core i9 (High-End)");
-        computerBuilder.buildRam(32);
-        computerBuilder.buildHardDrive("2 TB NVMe SSD");
-        computerBuilder.buildGraphicsCard("NVIDIA RTX 4090");
-        computerBuilder.buildOperatingSystem("Windows 11 Pro");
-        computerBuilder.addAccessory("Mechanical RGB Keyboard", 80.0);
+        computerBuilder.buildProcessor();
+        computerBuilder.buildRam();
+        computerBuilder.buildHardDrive();
+        computerBuilder.buildGraphicsCard();
+        computerBuilder.buildOperatingSystem();
+        computerBuilder.addAccessory();
     }
     public void constructOfficeComputer() {
         computerBuilder.reset();
-        computerBuilder.buildProcessor("Intel Core i5 (Entry)");
-        computerBuilder.buildRam(16);
-        computerBuilder.buildHardDrive("512 GB SSD");
-        computerBuilder.buildGraphicsCard("Integrated Graphics");
-        computerBuilder.buildOperatingSystem("Windows 11 Home");
+        computerBuilder.buildProcessor();
+        computerBuilder.buildRam();
+        computerBuilder.buildHardDrive();
+        computerBuilder.buildGraphicsCard();
+        computerBuilder.buildOperatingSystem();
     }
-    public void constructCustomComputer(String processor, int ram, String hardDrive, String graphicsCard, String operatingSystem) {
+    public void constructCustomComputer() {
         computerBuilder.reset();
-        computerBuilder.buildProcessor(processor);
-        computerBuilder.buildRam(ram);
-        computerBuilder.buildHardDrive(hardDrive);
-        computerBuilder.buildGraphicsCard(graphicsCard);
-        computerBuilder.buildOperatingSystem(operatingSystem);
+        computerBuilder.buildProcessor();
+        computerBuilder.buildRam();
+        computerBuilder.buildHardDrive();
+        computerBuilder.buildGraphicsCard();
+        computerBuilder.buildOperatingSystem();
+        computerBuilder.addAccessory();
     }
 
 

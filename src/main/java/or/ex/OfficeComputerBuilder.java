@@ -13,35 +13,37 @@ public class OfficeComputerBuilder implements ComputerBuild {
     }
 
     @Override
-    public void buildProcessor(String grade) {
-        this.computer.setProcessor(grade);
+    public void buildProcessor() {
+        computer.setProcessor("Intel i5");
+
     }
 
     @Override
-    public void buildRam(int gb) {
-        this.computer.setRamGB(gb);
+    public void buildRam() {
+       computer.setRamGB(8);
     }
 
 
 
     @Override
-    public void buildHardDrive(String storage) {
-        this.computer.setHardDrive((storage));
+    public void buildHardDrive() {
+        computer.setHardDrive("2 TB NVMe SSD");
+
     }
 
     @Override
-    public void buildGraphicsCard(String gbu) {
-        this.computer.setGraphicsCard(gbu);
+    public void buildGraphicsCard() {
+        computer.setGraphicsCard("Integrated Graphics");
     }
 
     @Override
-    public void buildOperatingSystem(String os) {
-        this.computer.setOperatingSystem(os);
+    public void buildOperatingSystem() {
+        computer.setOperatingSystem("Windows 11 Pro");
     }
 
     @Override
-    public void addAccessory(String accessory, double price) {
-        this.computer.addAccessory(accessory, price);
+    public void addAccessory() {
+        computer.addAccessory("Keyboard and Mouse", 50.0);
     }
 
 
